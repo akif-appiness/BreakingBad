@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.character {
+  width: 300px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  background-color: rgba(218, 210, 210, 0.562);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  overflow: hidden;
+  transition: box-shadow 0.3s, width 0.3s;
+  margin: 5px;
+}
+
+.character:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 20px 0;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #095b2e;
+}
+
+.birthday {
+  margin-bottom: 20px;
+  color: #808080;
+}
+
+/* Footer */
+.clientake-footer,
+.end-quote {
+  margin: 10px auto 20px;
+  text-align: center;
+}
+
+/* Back to Top */
+.back-to-top {
+  width: 130px;
+  margin: 0 auto;
+}
+.back-to-top a {
+  text-decoration: none;
+  text-align: center;
+}
+.back-to-top p i {
+  padding-left: 5px;
+}
+
+.back-to-top p {
+  font-weight: 700;
+  color: white;
+  padding: 8px 5px;
+  border-radius: 3px;
+  background-color: #095b2e;
+}
+
+.back-to-top p:hover {
+  background-color: #211d1d;
+}
+
+.footer-logo {
+  margin: 20px 0 10px;
+}
+
+.clientake-address h2 span {
+  line-height: 1.8;
+  padding-left: 5px;
+  border-left: 2px solid black;
+}
+
+.clientake-address h2 a {
+  cursor: pointer;
+  color: #095b2e;
+}
+
+.social-network i {
+  cursor: pointer;
+  color: #095b2e;
+  margin: 20px 15px 30px;
+  font-size: 1.5rem;
+}
+
+.social-network i:hover {
+  color: rgb(0, 46, 88);
+}
+
+/* Copyright */
+.clientake-copyrigth {
+  background-color: #211d1d;
+  color: #fff;
+}
+
+.copyrigth-content {
+  width: 90%;
+  text-align: center;
+}
+
+.copyrigth-content p {
+  padding: 20px 10px;
+}

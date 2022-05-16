@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home-slider {
+  position: relative;
+  height: 100vh;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: linear 5s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .home-content p span {
+  font-size: 50px;
+  line-height: 0.6em;
+  opacity: 0.8;
+}
+
+.slide .home-content p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 90%;
+}
+
+.slide .home-content cite {
+  font-size: 1.4rem;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.slide .home-content {
+  color: #fff;
+  position: absolute;
+  bottom: 50%;
+  left: -100%;
+  opacity: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.slide.current .home-content {
+  opacity: 1;
+  transform: translateX(100%);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+/* banner-images */
+
+.slide:first-child {
+  background: linear-gradient(
+      60deg,
+      rgba(2, 12, 29, 0.644) 0%,
+      rgba(67, 184, 192, 0.548) 98%
+    ),
+    url("Images/First.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide:nth-child(2) {
+  background: linear-gradient(
+      60deg,
+      rgba(2, 12, 29, 0.644) 0%,
+      rgba(67, 184, 192, 0.548) 98%
+    ),
+    url("Images/Walter-White-cash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide:nth-child(3) {
+  background: linear-gradient(
+      60deg,
+      rgba(2, 12, 29, 0.644) 0%,
+      rgba(67, 184, 192, 0.548) 98%
+    ),
+    url("Images/3.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .slide .home-content p {
+    width: 550px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .slide .home-content p {
+    width: 900px;
+    font-size: 3rem;
+  }
+}
+
+/*Get to Know  */
+.container h1 {
+  color: #095b2e;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px;
+}
+
+.about-content {
+  margin-bottom: 3rem;
+}
+
+.about-content p {
+  margin: 15px;
+  width: 90%;
+}
+
+.about-content img {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 15px auto;
+}
+
+@media screen and (min-width: 700px) {
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content p {
+    max-width: 600px;
+  }
+  .get-to-know-image {
+    height: 100%;
+    margin: 15px auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-content {
+    display: flex;
+  }
+  .heading h1 {
+    font-size: 2.5rem;
+  }
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+  .about-content p {
+    font-size: 20px;
+  }
+}
+
+/* Achivements */
+.heading {
+  text-align: center;
+  padding-bottom: 45px;
+  color: #095b2e;
+}
+.award {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.award p {
+  padding: 8px;
+  text-align: center;
+}
+.award img {
+  height: 55px;
+  width: 55px;
+}
+
+@media screen and (min-width: 1024px) {
+  .achive {
+    display: flex;
+  }
+}
+
+.clientake-footer,
+.end-quote {
+  margin: 10px auto 20px;
+  text-align: center;
+}
+
+/* Back to Top */
+.back-to-top {
+  width: 130px;
+  margin: 0 auto;
+}
+.back-to-top a {
+  text-decoration: none;
+  text-align: center;
+}
+.back-to-top p i {
+  padding-left: 5px;
+}
+
+.back-to-top p {
+  font-weight: 700;
+  color: white;
+  padding: 8px 5px;
+  border-radius: 3px;
+  background-color: #095b2e;
+}
+
+.back-to-top p:hover {
+  background-color: #211d1d;
+}
+
+.footer-logo {
+  margin: 20px 0 10px;
+}
+
+.clientake-address h2 span {
+  line-height: 1.8;
+  padding-left: 5px;
+  border-left: 2px solid black;
+}
+
+.clientake-address h2 a {
+  cursor: pointer;
+  color: #095b2e;
+}
+
+.social-network i {
+  cursor: pointer;
+  color: #095b2e;
+  margin: 20px 15px 30px;
+  font-size: 1.5rem;
+}
+
+.social-network i:hover {
+  color: rgb(0, 46, 88);
+}
+/* Copyright */
+.clientake-copyrigth {
+  background-color: #211d1d;
+  color: #fff;
+}
+
+.copyrigth-content {
+  width: 90%;
+  text-align: center;
+}
+
+.copyrigth-content p {
+  padding: 20px 10px;
+}
